@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,37 +15,59 @@
   </style>
 </head>
 <body>
+  <div class="backcardpart">
+    <div class="bcknum"></div>
+  </div>
+  <div class="frontcrd">
+    <div class="circle">
+      <div class="biggercirc"></div>
+      <div class="smallcirc"></div>
+    </div>
+    <div class="details">
+      <div class="frontnum">0000 0000 0000 0000</div>
+      <div class="crdname">
+        <div class="name">Jane Appleseed</div>
+        <div class="date"> <span class="MM"></span> 00 / <span class="YY"> 00 </span></div>
+      </div>
+    </div>
+  </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
+  <div class="form">
+    <div class="holdername">
+      Cardholder Name
+      <input type="text" class="holdernameinput" placeholder="e.g. Jane">
+    </div>
+    <div class="cardnumber">
+      Card Number
+      <input type="text" class="CardNumberInput" placeholder="e.g. 1234 1234 1234 1234">
+      <div class="numerror">Numbers only and 16 digits</div>
+    </div>
+    <div class="datecvc">
+      <div class="label">
+        <p>Exp. Date (MM/YY)</p>
+        <p>CVC</p>
+      </div>
+      <div class="inputs">
+        <input type="number" class="month" placeholder="MM">
+        <input type="number" class="year" placeholder="YY">
+        <input type="number" class="month" placeholder="e.g. 123">
+      </div>
+      <div class="button">Confirm</div>
+    </div>
+  </div>
+<!-- Completed state start -->
+  <div class="formcomplete">
+    <div class="center">
+      <img src="images/icon-complete.svg" alt="">
+      <div class="thanks">Thank You!</div>
+      <div class="add">We've added your card details</div>
+      <div class="continue">Continue</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Nicholaus Santo</a>.
   </div>
 </body>
 </html>
