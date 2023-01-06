@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-image: url("images/bg-main-mobile.png");
+    background-color: white;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.backcardpart{
+    background-image: url("images/bg-card-back.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 284px;
+    height: 155px;
+    position: relative;
+    top: 33px;
+    left: 73px;
+    z-index: -1;
+}
+.bcknum{
+    color: white;
+    font-size: 10p;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+.frontcrd{
+    background-image: url("images/bg-card-front.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 284px;
+    height: 155px;
+    color: white;
+    position: relative;
+    top: -29px;
+    left: 16px;
+    padding-top: 15px;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+}
+.biggercircle{
+    
+}
